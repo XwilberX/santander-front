@@ -1,0 +1,112 @@
+.header {
+    margin: 40px 20px 0px 20px; /*top left bottom right*/
+    /* margin-top: 40px;
+    margin-left: 20px;
+    margin-right: 20px; */
+    height: 45px;
+    font-size: 0;
+    line-height: 45px;
+  }
+
+li {
+  display: inline;
+  margin: 0px 25px 0px 25px; /*top left bottom right*/
+}
+
+.header > * {
+  display: inline-block;
+  font-size: 16px;
+  vertical-align: middle;
+  height: 100%;
+  line-height: 45px;
+  font-family: sans-serif;
+}
+
+.logo {
+  width: 15%;
+}
+
+.navbar {
+  width: 70%;
+  text-align: center;
+  color: #025157;
+}
+
+.actions {
+  
+  width: 15%;
+  text-align: right;
+  font-size: 14px;
+}
+
+.actions > * {
+  margin: 0px 10px; /*top-buttom y left-right*/
+}
+
+.actions a {
+  color: #67b54b
+}
+
+.actions button {
+  color: white;
+  background-color: #67b54b;
+  padding: 12px 14px 12px 14px; /*top left bottom right*/
+  border: none;
+  border-radius: 5px;
+}
+
+
+.fixed-header {
+    position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #fffbf7;
+}
+
+
+.sec {
+    display: flex;
+    width: 70%;
+    margin: 100px auto;
+    align-items: center;
+}
+
+.publicidad {
+    margin-left: 20px;
+}
+
+.publicidad h2 {
+    font-family: 'Courier New', Courier, monospace;
+    color: #025157;
+}
+
+.publicidad > p {
+    font-family: 'Courier New', Courier, monospace;
+    color: #343434
+}
+
+.publicidad > form {
+    display: flex;
+}
+  
+.publicidad > form p {
+    color: #025157;
+    margin-right: 18px;
+}
+
+.publicidad > form button {
+    color: #fff;
+    background-color: #025157;
+}
+
+.video-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.video-img img {
+    width: 120px;
+    margin-top: 10px;
+}
