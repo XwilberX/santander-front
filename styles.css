@@ -1,22 +1,340 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     background-color: #fffbf7;
+    font-family: "Open Sans", sans-serif;
+*/
+}
+
+main {
+    margin-top: 115px;
+    text-align: left;
 }
 
 h1 {
     color: #46484c;
+    text-align: left;
+    font-size: 30px;
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+}
+
+h2 {
+    color: #46484c;
+    text-align: left;
+    font-size: 20px;
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
 }
 
 p {
     color: #8b8b8bcc;
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+    font-size: 18px;
+    text-align: left;
 }
 
 button {
     color: #fff;
     background-color: #025157;
-} 
+}
 
 .header {
-    margin-top: 40px;
-    margin-left: 20px;
+    margin: 20px 10px 0 10px;
+    font-size: 0;
+    line-height: 45px;
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+}
+
+li {
+    display: inline;
+}
+
+.fixed-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #fffbf7;
+    z-index: 10;
+}
+
+
+/*Aplica a los hijos del header*/
+
+.header>* {
+    display: inline-block;
+    font-size: 16px;
+    vertical-align: middle;
+    line-height: 45px;
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+}
+
+.logo {
+    width: 15%;
+}
+
+.logo img {
+    margin-top: 10px;
+}
+
+.navbar {
+    width: 68%;
+    text-align: center;
+    color: #025157;
+    font-weight: 500;
+}
+
+.menu-item {
+    display: inline;
+    margin-right: 25px;
+    margin-left: 25px;
+}
+
+.actions {
+    width: 17%;
+    text-align: right;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.actions>* {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.actions a {
+    color: #67b54b;
+}
+
+.actions button {
+    color: white;
+    background-color: #67b54b;
+    padding-top: 12px;
+    padding-right: 14px;
+    padding-bottom: 12px;
+    padding-left: 14px;
+    border: 0;
+    border-radius: 5px;
+}
+
+.seccion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    margin: 100px auto;
+    padding-top: 30px;
+    align-items: center;
+}
+
+.article1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 10px;
+}
+
+.article1 img {
+    width: 120px;
+    margin-top: 10px;
+}
+
+.article1 h1 {
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+    font-size: 30px;
+    line-height: 48px;
+    color: #025157;
+}
+
+.article1>p {
+    font-size: 20px;
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+    color: #025157;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.article1 > form {
+    display: block;
+    width: 100%;
+}
+
+.article1 > form p {
+    color: #828282;
+    font-family: sans-serif;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.article1 > form div {
+    display: flex;
+}
+
+.article1 > form button {
+    padding: 8px 12px;
+    border-radius: 3px;
+    display: block;
+}
+
+.article1 > form input[type="email"] {
+    width: 70%;
+    height: 47px;
+    font-weight: 600;
+    padding: 5px 10px;
+    font-size: 0.8rem;
+    border-radius: 5px 0px 0px 5px;
+    border: 1px solid #d2d2d2;
+}
+
+.article1 > form button {
+    -webkit-appearance: none;
+    background-color: #025157;
+    font-weight: 600;
+    font-size: 0.85rem;
+    width: 30%;
+    height: 47px;
+    padding: 5px;
+    color: #FFF;
+    cursor: pointer;
+    border: 0px solid #eee;
+    border-radius: 0px 5px 5px 0px;
+    margin-left: -1px;
+}
+
+.postwork {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #a1d683;
+    padding: 5% 15%;
+}
+
+.postwork .left {
+    flex: 2;
+    padding-right: 100px;
+}
+
+.postwork .left h2 {
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+    font-size: 51px;
+    line-height: 61px;
+    color: #025157;
+}
+
+.postwork .left p {
+    color: #343434;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+.postwork .left button {
+    font-size: 14px;
+    padding: 12px 12px 6px 12px;
+    border-radius: 8px;
+    height: 45px;
+    font-weight: 600;
+    margin-left: 0;
+}
+
+.postwork .left img {
+    width: 500px;
+    max-width: 100%;
+}
+
+.postwork .carrusel {
+    max-width: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    background-color: #fff;
+    position: relative;
+}
+
+.postwork .carrusel .card-media {
+    position: relative;
+}
+
+.postwork .carrusel img {
+    width: 100%;
+    max-height: 16vw;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.postwork .carrusel figure {
+    margin-top: 0;
+    width: 100%;
+}
+
+.postwork .carrusel .company {
+    position: absolute;
+    bottom: -20px;
+    right: 20px;
+    width: 100px;
+    height: 100px;
+    background-color: #f9da73;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.postwork .carrusel .card-body,
+.postwork .carrusel .card-footer {
+    padding: 25px;
+}
+
+.postwork .carrusel .card-body h4 {
+    color: #025157;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 20px;
+    margin-bottom: 12px;
+}
+
+.postwork .carrusel .card-body h3 {
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+
+.postwork .carrusel .card-body .results {
+    display: flex;
+    align-items: center;
+    color: #828282;
+}
+
+.postwork .carrusel .card-body .results img {
+    width: 26px;
     margin-right: 20px;
-  }
+}
+
+.postwork .carrusel .card-body .results p {
+    margin-top: 0;
+}
+
+.postwork .carrusel .card-footer {
+    margin-bottom: 20px;
+    background-color: unset;
+    border-top: unset;
+}
+
+.postwork .carrusel .card-footer button {
+    display: block;
+    margin-left: 0;
+    border-radius: 5px;
+    font-size: 13;
+    font-weight: 600;
+    padding: 12px 20px;
+    width: 100%;
+}
